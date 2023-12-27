@@ -1,7 +1,7 @@
 import React from 'react'
-import ImageCard from './imageCard/ImageCard.jsx'
-import BottonCard from './bottonCard/BottonCard.jsx'
-import InformationCard from './informationCard/InformationCard.jsx'
+import ImageCard from './ImageCard/ImageCard.jsx'
+// import BottonCard from './BottonCard/BottonCard.jsx'
+import InformationCard from './InformationCard/InformationCard.jsx'
 import '../../index.css'
 
 const Card = () => {

@@ -1,5 +1,5 @@
 
-// import CardContent from './components/card/cardContent/CardContent'
+import ItemListContainer from './components/card/ItemListContainer/ItemListContainer'
 import NavBar from './components/nav/NavBar'
 import './index.css'
 
@@ -7,8 +7,9 @@ import './index.css'
 function App() {
 
   return (
-    <div className='bg-[#E4F7F8] w-full h-screen'>
+    <div className='bg-[#EDEDED] w-full h-full'>
      <NavBar />
+      <ItemListContainer  greeting="Greeting"/> 
     </div>
   )
 }
