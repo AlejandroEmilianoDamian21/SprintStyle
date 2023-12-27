@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaShopify } from "react-icons/fa";
+import CartWidget from '../cart/CartWidget'
 
 
 const Navbar = () => {
@@ -38,11 +39,12 @@ const Navbar = () => {
             <a href="/">Explore now</a>
           </div>
           <div
-            className="hidden max-lg:block cursor-pointer"
+            className="hidden max-lg:block cursor-pointer inline"
             onClick={() => {
               setIsMenuOpen(!isMenuOpen);
             }}
           >
+            <CartWidget  className="inline" /> 
             <RxHamburgerMenu className="text-4xl" />
           </div>
         </nav>
