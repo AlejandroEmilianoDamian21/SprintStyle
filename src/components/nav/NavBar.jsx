@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { AiOutlineClose } from "react-icons/ai";
 import { FaShopify } from "react-icons/fa";
 import CartWidget from "../cart/CartWidget";
 

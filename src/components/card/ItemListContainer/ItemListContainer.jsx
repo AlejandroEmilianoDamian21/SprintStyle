@@ -6,11 +6,11 @@ const ItemListContainer  = ({greeting}) => {
   return (
     <>
     <h1 className='block text-2xl font-bold text-center'>{greeting}</h1>
-    <div className='cardsContainer'>
-    <Card className= 'cardPosition ' />
-    <Card className= 'cardPosition '/>
-    <Card className= 'cardPosition'/>
-    <Card className= 'cardPosition'/>
+    <div className='cardsContainer' >
+    <Card className= 'cardPosition'  stock={2}/>
+    <Card className= 'cardPosition' stock={10}/>
+    <Card className= 'cardPosition' stock={10}/>
+    <Card className= 'cardPosition' stock={1}/>
     </div>
     </>
   )
