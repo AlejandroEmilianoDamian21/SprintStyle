@@ -16,13 +16,13 @@ body {
 
   /*Diseño de la carta*/
   .card {
-    @apply bg-white  h-[473px] max-w-sm  rounded  shadow-lg m-1;
+    @apply bg-white  h-[583px] w-full  rounded  shadow-lg m-1;
   }
   /********************/
 
   /*Contenedor de las cartas*/
   .cardsContainer{
-    @apply flex flex-wrap justify-center p-2 ;
+    @apply flex justify-center p-2  m-4;
   }
   .cardPosition{
     @apply w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 ;
