@@ -1,9 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { CartContext } from "../../../context/CartContext";
 
-const BottonCard = ({ initial, stock, onAdd }) => {
+
+const BottonCard = ({ initial, stock /*, onAdd*/ }) => {
   const [quantity, setQuantity] = useState(initial);
   const [alertShown, setAlertShown] = useState(false);
-  const [alertShownDecrement, setalertShownDecrement] = useState(false);
+  // const [alertShownDecrement, setalertShownDecrement] = useState(false);
+
+  const value_cartContext = useContext(CartContext);
 
   const decremet = () => {
     if (quantity > 1) {
@@ -24,8 +28,13 @@ const BottonCard = ({ initial, stock, onAdd }) => {
     }
   };
 
+  const addCart  = () => {
+    console.log("Click a agregar al carrito "+ quantity);
+    console.log("Context" +value_cartContext);
+  }
+
   return (
-    <div className="gird grid-cols-3 items-center justify-center mx-4">
+    <div className="items-center justify-center mx-4">
       {alertShown && (
         <div
           className="mb-4 rounded-lg bg-yellow-200 px-6 py-2 text-base text-info-800"
@@ -53,7 +62,8 @@ const BottonCard = ({ initial, stock, onAdd }) => {
       </div>
       <button
         className="bg-slate-950 text-slate-100 px-4 text-2xl rounded w-full py-2 font-bold"
-        onClick={()=> onAdd(quantity)}
+        // onClick={()=> onAdd(quantity)}
+        onClick={addCart}
         disabled={!stock}
       >
         Agregar al carrito

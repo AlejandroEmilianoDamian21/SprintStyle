@@ -8,7 +8,6 @@ const StarRating = () => {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 16 16"
             fill="currentColor"
-            dataSlot="icon"
             className="w-4 h-4 inline"
           >
             <path
@@ -22,7 +21,6 @@ const StarRating = () => {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 16 16"
             fill="currentColor"
-            dataSlot="icon"
             className="w-4 h-4 inline"
           >
             <path
@@ -36,7 +34,6 @@ const StarRating = () => {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 16 16"
             fill="currentColor"
-            dataSlot="icon"
             className="w-4 h-4 inline"
           >
             <path
@@ -52,7 +49,6 @@ const StarRating = () => {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            dataSlot="icon"
             className="w-4 h-4 inline"
           >
             <path

@@ -11,9 +11,9 @@ const Navbar = () => {
     <>
       <header className="sm:px-8 px-4 py-2 z-10 w-full  border-gray-800 bg-[#ffffff]">
         <nav className="flex justify-between items-center max-container">
-          <Link href="/" className="text-3xl font-bold inline">
+          <Link to={`/`} className="text-3xl font-bold inline">
             <FaShopify className="inline sm:text-5xl lg:hidden lg:text-4xl" />
-            <span class="hidden lg:inline-block">SprintStyle</span>
+            <span className="hidden lg:inline-block">SprintStyle</span>
           </Link>
           <div className="font-bold flex-1 flex justify-center items-center gap-16 max-lg:hidden">
           <NavLink to={`/`} className="font-montserrat leading-normal text-lg text-slate-gray uppercase">Home</NavLink>
